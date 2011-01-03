@@ -1,35 +1,38 @@
+Flattr buttons for Blogger.
+Paul Philippov <themactep@gmail.com>
 
- Flattr buttons for Blogger.
- Paul Philippov <themactep@gmail.com>
+Documentation:
+--------------
+Flattr is the worlds first social micro-payment system. Go to https://flattr.com/ to get a clue and join.
+This plugins will automatically scan a blog page and add a nice dynamic flatter button to each post.
+Should work for most Blogger templates. No warranties though. Feel free to hack and submit patches.
 
- Documentation:
- --------------
- Flattr is the worlds first social micro-payment system. Go to https://flattr.com/ to get a clue and join.
- This plugins will automatically scan a blog page and add a nice dynamic flatter button to each post.
- Should work for most Blogger templates. No warranties though. Feel free to hack and submit patches.
+Installation:
+-------------
+Copy the followind code within <header/> area of your HTML template. Don't forget to replace <username> with your Flattr username.
 
- Installation:
- -------------
- Copy the followind code within <header/> area of your HTML template. Don't forget to replace <username> with your Flattr username.
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://dl.dropbox.com/u/2074242/Google/jquery.flattr-0.0.1.js"></script>
+<script type="text/javascript">
+$('document').ready(function(){
+  $(this).flattr('<username>');
+});
+</script>
 
- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
- <script type='text/javascript' src='http://dl.dropbox.com/u/2074242/Google/jquery.flattr-0.0.1.js'></script>
- <script type='text/javascript'>
- $('document').ready(function(){
-   $(this).flattr('<username>');
- });
- </script>
+Optionally, you can define a custom button type, and the language of posts:
 
- Optionally, you can define a custom button type, and the language of posts:
+$('document').ready(function(){
+  $(this).flattr('<username>', 'compact', 'ru_RU');
+});
 
- $('document').ready(function(){
-   $(this).flattr('<username>', 'compact', 'ru_RU');
- });
+List of supported language codes: http://api.flattr.com/odapi/languages/human
+Flattr JavaScript API for hackers: https://flattr.com/support/integrate/js
 
- List of supported language codes: http://api.flattr.com/odapi/languages/human
- Flattr JavaScript API for hackers: https://flattr.com/support/integrate/js
+License:
+--------
+This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+http://creativecommons.org/licenses/by-sa/3.0/
 
- License:
- --------
- This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
- http://creativecommons.org/licenses/by-sa/3.0/
+Support:
+---------
+Like it? Go Flattr me: http://flattr.com/thing/111432/Flattr-buttons-for-Blogger-jQuery-plugin
