@@ -11,8 +11,8 @@ Installation:
 -------------
 Copy the followind code within <header/> area of your HTML template. Don't forget to replace <username> with your Flattr username.
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://dl.dropbox.com/u/2074242/Google/jquery.flattr-0.0.1.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"/>
+<script type="text/javascript" src="http://dl.dropbox.com/u/2074242/Google/jquery.flattr-0.0.1.js"/>
 <script type="text/javascript">
 $('document').ready(function(){
   $(this).flattr('<username>');
