@@ -47,7 +47,7 @@
 
       $('.post').each(function(){
         var title = $(this).find('.post-title').text().trim();
-        var url   = $(this).find('.post-title a').attr('href');
+        var url = ($(this).find('.post-title a')[0]) ? $(this).find('.post-title a').attr('href') : document.URL;
         var descr = $(this).find('.post-body').text().trim().split("\n")[0];
         var tags_array = new Array();
         $(this).find('.post-labels a').each(function(){
